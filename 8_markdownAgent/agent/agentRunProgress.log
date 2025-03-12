@@ -1,0 +1,69 @@
+(AgentLearning) PS D:\Code Projects\AI Agent Learning\8_markdownAgent\agent> python main.py
+                   序号\t日期\t零基础学机器学习\t数据分析咖哥十话\tGPT图解
+0   0\t31/3/2022\t303.032760\t985.615033\t909.762701
+1  1\t30/6/2022\t504.892977\t871.129109\t1023.037873
+2  2\t30/9/2022\t576.723513\t1035.950790\t1080.55...
+3  3\t31/12/2022\t670.501822\t1068.182030\t1148.9...
+4  4\t31/3/2023\t766.792751\t718.352429\t1204.730960
+成功创建文件
+已成功创建助手
+ Assistant(id='asst_DIjgLmsBLeJ3zhHqRP6J68PK', created_at=1741746483, description=None, instructions='作为一名数据科学助理，当给定数据和一个查询时，你能编写适当的代码并创建适当的可视化', metadata={}, model='gpt-4o', name='数据可视化助手', object='assistant', tools=[CodeInterpreterTool(type='code_interpreter')], response_format='auto', temperature=1.0, tool_resources=ToolResources(code_interpreter=ToolResourcesCodeInterpreter(file_ids=['file-C6D9LjS1ZAdkbaM2NkfGQ6']), file_search=None), top_p=1.0, reasoning_effort=None)
+已成功创建线程
+ Thread(id='thread_LFOvoOLa1GGtGKivguh5h6M7', created_at=1741746484, metadata={}, object='thread', tool_resources=ToolResources(code_interpreter=ToolResourcesCodeInterpreter(file_ids=['file-C6D9LjS1ZAdkbaM2NkfGQ6']), file_search=None))
+成功创建run
+ Run(id='run_cWNuOoGFBpAtf8vMjzsDU5aN', assistant_id='asst_DIjgLmsBLeJ3zhHqRP6J68PK', cancelled_at=None, completed_at=None, created_at=1741746487, expires_at=1741747087, failed_at=None, incomplete_details=None, instructions='作为一名数据科学助理，当给定数据和一个查询时，你能编写适当的代码并创建适当的可视化', last_error=None, max_completion_tokens=None, max_prompt_tokens=None, metadata={}, model='gpt-4o', object='thread.run', parallel_tool_calls=True, required_action=None, response_format='auto', started_at=None, status='queued', thread_id='thread_LFOvoOLa1GGtGKivguh5h6M7', tool_choice='auto', tools=[CodeInterpreterTool(type='code_interpreter')], truncation_strategy=TruncationStrategy(type='auto', last_messages=None), usage=None, temperature=1.0, top_p=1.0, tool_resources={}, reasoning_effort=None)
+你的助手正在努力做图表
+当前Message 我上传了一个csv文件，请计算从2022年到2025年每个季度的总销售额，并通过不同的产品将其可视化为折线图， 产品线条分别为红，蓝，绿, 图表上的文字请使用英文
+你的助手正在努力做图表
+当前Message 我上传了一个csv文件，请计算从2022年到2025年每个季度的总销售额，并通过不同的产品将其可视化为折线图， 产品线条分别为红，蓝，绿, 图表上的文字请使用英文
+你的助手正在努力做图表
+你的助手正在努力做图表
+当前Message 看起来你上传的CSV文件使用了制表符（`\t`）作为分隔符，我们需要指定它来正确读取数据。此外，数据中的列 名可能需要转换为简单的英文名称以便分析。让我来处理这些。
+你的助手正在努力做图表
+当前Message 数据已成功加载并清理。我们接下来将计算从 2022 年至 2025 年每个季度的总销售额，并为不同的产品绘制折线图。
+你的助手正在努力做图表
+当前Message 数据已成功加载并清理。我们接下来将计算从 2022 年至 2025 年每个季度的总销售额，并为不同的产品绘制折线图。
+图表已创建！
+RUN STATUS:queued
+RUN STATUS:completed
+RUN COMPLETED SUCCESSFULLY
+1. 从2022年到2023年，“Machine Learning For Beginners”保持稳定增长，显示出逐渐增加的市场需求。
+
+2. “GPT Visualization”在整个期间表现出最高的销售额，表明强劲的持续市场吸引力。
+RUN STATUS:queued
+RUN STATUS:completed
+RUN COMPLETED SUCCESSFULLY
+"Machine Learning Rises; GPT Visualization Leads in Sales"
+封面已生成！
+您的助手正在努力制作文档
+list index out of range
+当前消息 Message(id='msg_GZukEoTjn584vjIFWtyld305', assistant_id=None, attachments=[Attachment(file_id='file-6Cr2wuqDnQC8oBTKzwGHRa', tools=[CodeInterpreterTool(type='code_interpreter')]), Attachment(file_id='file-PMd115wMURPNMWLepqrBQA', tools=[CodeInterpreterTool(type='code_interpreter')])], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='\n你的任务是根据之前生成的信息创建一个markdown文档。具体构建顺序要求如下：\n\n1.markdown文档的主标题为花语秘境\n\n2.markdown文档的副标题为2025年销售大会\n\n3.在markdown文档中插入之前生成 的配图，配图的插入路径为封面海报.png\n\n4.在markdown文档中插入之前的生成的折线图，折线图的插入路径为图书销售.png\n\n5.在markdown文档中插入折线图标题，具体为"Machine Learning Rises; GPT Visualization Leads in Sales"\n\n6.在markdown文档中插入折线图配文，具体为1. 从2022年到2023年，“Machine Learning For Beginners”保持稳定增长，显示出逐渐 增加的市场需求。\n\n2. “GPT Visualization”在整个期间表现出最高的销售额，表明强劲的持续市场吸引力。\n\n7.确保输出为md格式的文件\n'), type='text')], created_at=1741746576, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_LFOvoOLa1GGtGKivguh5h6M7')
+您的助手正在努力制作文档
+list index out of range
+当前消息 Message(id='msg_GZukEoTjn584vjIFWtyld305', assistant_id=None, attachments=[Attachment(file_id='file-6Crock(text=Text(annotations=[], value='\n你的任务是根据之前生成的信息创建一个markdown文档。具体构建顺序要求如下：\n\n1.markdown文档的主标题为花语秘境\n\n2.markdown文档的副标题为2025年销售大会\n\n3.在markdown文档中插入之前生成 的配图，配图的插入路径为封面海报.png\n\n4.在markdown文档中插入之前的生成的折线图，折线图的插入路径为图书销售.png\n\n5.在markdown文档中插入折线图标题，具体为"Machine Learning Rises; GPT Visualization Leads in Sales"\n\n6.在markdown文档中插入折线图配文，具体为1. 从2022年到2023年，“Machine Learning For Beginners”保持稳定增长，显示出逐渐 增加的市场需求。\n\n2. “GPT Visualization”在整个期间表现出最高的销售额，表明强劲的持续市场吸引力。\n\n7.确保输出为md格式的文件\n'), type='text')], created_at=1741746576, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_LFOvoOLa1GGtGKivguh5h6M7')
+您的助手正在努力制作文档
+list index out of range
+当前消息 Message(id='msg_GZukEoTjn584vjIFWtyld305', assistant_id=None, attachments=[Attachment(file_id='file-6Crn\n1.markdown文档的主标题为花语秘境\n\n2.markdown文档的副标题为2025年销售大会\n\n3.在markdown文档中插入之前生成 的配图，配图的插入路径为封面海报.png\n\n4.在markdown文档中插入之前的生成的折线图，折线图的插入路径为图书销售.png\n\n5.在markdown文档中插入折线图标题，具体为"Machine Learning Rises; GPT Visualization Leads in Sales"\n\n6.在markdown文档中插入折线图配文，具体为1. 从2022年到2023年，“Machine Learning For Beginners”保持稳定增长，显示出逐渐 增加的市场需求。\n\n2. “GPT Visualization”在整个期间表现出最高的销售额，表明强劲的持续市场吸引力。\n\n7.确保输出为md格式的文件\n'), type='text')], created_at=1741746576, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_LFOvoOLa1GGtGKivguh5h6M7')
+您的助手正在努力制作文档
+list index out of range
+当前消息 Message(id='msg_GZukEoTjn584vjIFWtyld305', assistant_id=None, attachments=[Attachment(file_id='file-6Cr的配图，配图的插入路径为封面海报.png\n\n4.在markdown文档中插入之前的生成的折线图，折线图的插入路径为图书销售.png\n\n5.在markdown文档中插入折线图标题，具体为"Machine Learning Rises; GPT Visualization Leads in Sales"\n\n6.在markdown文档中插入折线图配文，具体为1. 从2022年到2023年，“Machine Learning For Beginners”保持稳定增长，显示出逐渐 增加的市场需求。\n\n2. “GPT Visualization”在整个期间表现出最高的销售额，表明强劲的持续市场吸引力。\n\n7.确保输出为md格式的文件\n'), type='text')], created_at=1741746576, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_LFOvoOLa1GGtGKivguh5h6M7')
+您的助手正在努力制作文档
+list index out of range
+当前消息 Message(id='msg_GZukEoTjn584vjIFWtyld305', assistant_id=None, attachments=[Attachment(file_id='file-6Cr\n\n5.在markdown文档中插入折线图标题，具体为"Machine Learning Rises; GPT Visualization Leads in Sales"\n\n6.在markdown文档中插入折线图配文，具体为1. 从2022年到2023年，“Machine Learning For Beginners”保持稳定增长，显示出逐渐 增加的市场需求。\n\n2. “GPT Visualization”在整个期间表现出最高的销售额，表明强劲的持续市场吸引力。\n\n7.确保输出为md格式的文件\n'), type='text')], created_at=1741746576, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_LFOvoOLa1GGtGKivguh5h6M7')
+您的助手正在努力制作文档
+list index out of range
+当前消息 Message(id='msg_GZukEoTjn584vjIFWtyld305', assistant_id=None, attachments=[Attachment(file_id='file-6Crrkdown文档中插入折线图配文，具体为1. 从2022年到2023年，“Machine Learning For Beginners”保持稳定增长，显示出逐渐 增加的市场需求。\n\n2. “GPT Visualization”在整个期间表现出最高的销售额，表明强劲的持续市场吸引力。\n\n7.确保输出为md格式的文件\n'), type='text')], created_at=1741746576, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_LFOvoOLa1GGtGKivguh5h6M7')
+您的助手正在努力制作文档
+list index out of range
+当前消息 Message(id='msg_GZukEoTjn584vjIFWtyld305', assistant_id=None, attachments=[Attachment(file_id='file-6Cr增加的市场需求。\n\n2. “GPT Visualization”在整个期间表现出最高的销售额，表明强劲的持续市场吸引力。\n\n7.确保输出为md格式的文件\n'), type='text')], created_at=1741746576, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_LFOvoOLa1GGtGKivguh5h6M7')
+您的助手正在努力制作文档
+list index out of range
+当前消息 Message(id='msg_GZukEoTjn584vjIFWtyld305', assistant_id=None, attachments=[Attachment(file_id='file-6Cr为md格式的文件\n'), type='text')], created_at=1741746576, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_LFOvoOLa1GGtGKivguh5h6M7')
+您的助手正在努力制作文档
+list index out of range
+当前消息 Message(id='msg_GZukEoTjn584vjIFWtyld305', assistant_id=None, attachments=[Attachment(file_id='file-6Cr2wuqDnQC8oBTKzwGHRa', tools=[CodeInterpreterTool(type='code_interpreter')]), Attachment(file_id='file-PMd115wMUR{}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_LFOvoOLa1GGtGKivguh5h6M7')
+您的助手正在努力制作文档
+list index out of range
+当前消息 Message(id='msg_GZukEoTjn584vjIFWtyld305', assistant_id=None, attachments=[Attachment(file_id='file-6Cr2wuqDnQC8oBTKzwGHRa', tools=[CodeInterpreterTool(type='code_interpreter')]), Attachment(file_id='file-PMd115wMURlist index out of range
+当前消息 Message(id='msg_GZukEoTjn584vjIFWtyld305', assistant_id=None, attachments=[Attachment(file_id='file-6Cr2wuqDnQC8oBTKzwGHRa', tools=[CodeInterpreterTool(type='code_interpreter')]), Attachment(file_id='file-PMd115wMUR2wuqDnQC8oBTKzwGHRa', tools=[CodeInterpreterTool(type='code_interpreter')]), Attachment(file_id='file-PMd115wMURPNMWLepqrBQA', tools=[CodeInterpreterTool(type='code_interpreter')])], completed_at=None, content=[TextContentBlock(text=Text(annotations=[], value='\n你的任务是根据之前生成的信息创建一个markdown文档。具体构建顺序要求如下：\n\n1.markdown文档的主标题为花语秘境\n\n2.markdown文档的副标题为2025年销售大会\n\n3.在markdown文档中插入之前生成 的配图，配图的插入路径为封面海报.png\n\n4.在markdown文档中插入之前的生成的折线图，折线图的插入路径为图书销售.png\n\n5.在markdown文档中插入折线图标题，具体为"Machine Learning Rises; GPT Visualization Leads in Sales"\n\n6.在markdown文档中插入折线图配文，具体为1. 从2022年到2023年，“Machine Learning For Beginners”保持稳定增长，显示出逐渐 增加的市场需求。\n\n2. “GPT Visualization”在整个期间表现出最高的销售额，表明强劲的持续市场吸引力。\n\n7.确保输出为md格式的文件\n'), type='text')], created_at=1741746576, incomplete_at=None, incomplete_details=None, metadata={}, object='thread.message', role='user', run_id=None, status=None, thread_id='thread_LFOvoOLa1GGtGKivguh5h6M7')
+成功检索到md_id file-JrFj1yfixjEnTESLc8CJRe
