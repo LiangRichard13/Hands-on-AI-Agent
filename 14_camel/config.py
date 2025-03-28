@@ -19,7 +19,7 @@ from langchain.schema import SystemMessage
 task_specifier_sys_msg=SystemMessage(content="你可以让任务更具体。")
 task_specifier_prompt="""
 这是一个{assistant_role_name}将帮助{user_role_name}完成任务{task}。\n
-请用{word_limit}个或更少的词恢复具体的任务。不要添加其他任何内容。
+请用{word_limit}个或更少的词回复具体的任务。不要添加其他任何内容。
 """
 
 '''
