@@ -125,7 +125,8 @@ message=prompt.format(query=query,rag_info=str(results_set))
 llm=OpenAI()
 
 response=llm.invoke(query)
-print("没有通过rag的响应",response)
+print('******************************************************************')
+print("没有通过rag的响应:\n",response)
 
 response=llm.invoke(message)
-print("通过rag的响应",response)
+print("通过rag的响应:\n",response)

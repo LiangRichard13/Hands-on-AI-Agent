@@ -1,9 +1,3 @@
-#导入dotenv包，用于加载环境变量
-from dotenv import load_dotenv
-
-# 加载环境变量
-load_dotenv()
-
 #这里还需要COHERE_API_KEY和HUGGINGFACEHUB_API_TOKEN
 
 #导入dotenv包，用于加载环境变量

@@ -58,7 +58,7 @@ print("已加载索引")
 
 '''
 创建查询引擎，将向量索引转为查询引起
-查询引擎的工作流程是:输入问题->检索相关文档->基于语义相似度返回n个候选片段给llm->调用LLM生成回答
+查询引擎的工作流程是:输入问题->使用embedding model对输入进行向量化->基于相似性检索相关文档->基于语义相似度返回n个候选片段给llm->调用LLM生成回答
 '''
 query_engine=index.as_query_engine()
 
@@ -81,6 +81,8 @@ print("Response with Rag:",response_with_rag)
 
 print('******************************************************************')
 
+#没有RAG的回答
+#没有RAG的回答，直接调用llm的complete方法
 response_without_rag=llm.complete(question_a)
 print("Question",question_b)
 print("Response without Rag",response_without_rag)

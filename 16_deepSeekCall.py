@@ -24,11 +24,11 @@ deepseek_api_key=os.getenv("DEEPSEEK_API_KEY")
 '''
 这是使用langchain中内置的ChatOpenAI的调用方式调用deepseek-v3
 '''
-# from langchain_openai import ChatOpenAI
+from langchain_openai import ChatOpenAI
 
-# model=ChatOpenAI(base_url="https://api.deepseek.com",model="deepseek-chat",api_key=deepseek_api_key)
-# response = model.invoke("Hello, Please introduce yourself.")
-# print(response.content)
+model=ChatOpenAI(base_url="https://api.deepseek.com",model="deepseek-chat",api_key=deepseek_api_key)
+response = model.invoke("Hello, Please introduce yourself.")
+print(response.content)
 
 '''
 这是使用llama-index调用DeepSeek的方式
